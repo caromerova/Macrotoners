@@ -1,43 +1,19 @@
+/* estilos al body*/
 body{
     background-color: rgb(0 0 0);
     font-family:Verdana, Geneva, Tahoma, sans-serif;
+    padding: 0%;
     
 }
 
-
-nav.navbar{
-    position: absolute;
-    background-color: rgb(85, 87, 86);
-    width:100%; 
-    height:auto;
-    z-index:-2;
-}
-
-
-div.collapse /*para separar los items del header del borde*/
-{
-    display: flex;
-    justify-content:flex-end;
-    padding-right: 5%;
-    padding-bottom: 17px;
-}
-
-
+/* estilos al los elementos del menu Navbar*/
 .nav-link
 {
-    margin:0;
-    display: block; 
-    width: 235px; 
-    border: 1px solid #aaa;
-    border-radius: 3px;
-    text-decoration: none; 
-    padding: 7px 10px; 
-    margin-top: 10px; 
+    width: 235px;   
     text-align: center; 
-    position: relative; 
+    position:sticky; 
     transition: .3s; 
     color:magenta;
- 
 }
 
 .nav-link::before
@@ -48,12 +24,7 @@ div.collapse /*para separar los items del header del borde*/
     bottom: 0;  
     background-color: yellow; 
     z-index: -1;
-
-
-    left: 100%;
-    width: 0%;
     transition: .3s;
-    border-radius: 3px;
 }
 
 .nav-link:hover::before
@@ -64,7 +35,8 @@ div.collapse /*para separar los items del header del borde*/
     border-radius: 3px; 
 }
 a.navbar-brand{
-    padding-left: 100px;  
+    padding-left: 100px; 
+    padding-right: 100px; 
 }
 a.navbar-brand img{
     padding-left: px;  
@@ -72,18 +44,83 @@ a.navbar-brand img{
     height:50%; 
 }
 
-body{
+/* estilos del carousel*/
+#carousel {
+    position: relative;
+  }
+  #carousel .overlay {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    z-index: 1;
+  }
 
-    
-
+  /*inicio.html*/
+#miCarrusel
+{
+  opacity:70%;
+}
+.carousel-item img {
+  max-height: 800px; 
+  width: 500px; 
+}
+.carousel-caption {
+  background-color: rgba(0, 0, 0, 0.5); 
+  color: #fff; 
+}
+.carousel-control-prev,
+.carousel-control-next {
+  background-color: #000; 
+  border: none; 
+}
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  color: #fff; 
+}
+.carousel-item img {
+  border: 4px solid #ccc;
 }
 
-footer {
-    background-color: rgb(85, 87, 86);
-    position: absolute;
-    bottom: 0;
+/*footer*/
+.mkdf-page-footer .mkdf-footer-top-holder {
+    position: relative;
+    display: inline-block;
     width: 100%;
-    height: 30px;
-    color: white;
+    vertical-align: middle;
+    background-color: #242626;
+    box-sizing: border-box;
+  }
+  
+  .mkdf-page-footer .mkdf-footer-top-holder {
+    position: relative;
+    display: inline-block;
+    width: 100%;
+    vertical-align: middle;
+    background-color: #242626;
+    box-sizing: border-box;
+  }
+  
+  element.style {
+    color: #fff;
+    font-size: 10px;
+    margin: 23px 10px 0px 0px;
+  }
+  
+  .mkdf-page-footer .mkdf-icon-widget-holder, .mkdf-top-bar .mkdf-icon-widget-holder {
+    color: #fff;
+    background-color: #3a3c3c;
+    width: 28px;
+    height: 28px;
+    text-align: center;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    border-radius: 50%;
+    -webkit-transition: background-color .3s;
+    -moz-transition: background-color .3s;
+    transition: background-color .3s;
   }
 
